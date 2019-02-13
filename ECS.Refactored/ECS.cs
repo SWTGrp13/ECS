@@ -1,8 +1,8 @@
-﻿namespace ECS.Legacy
+﻿namespace ECS.Refactored
 {
     public class ECS
     {
-        private int _threshold;                     //dependencies
+        private int _threshold;
         private readonly TempSensor _tempSensor;
         private readonly Heater _heater;
 
@@ -20,6 +20,7 @@
                 _heater.TurnOn();
             else
                 _heater.TurnOff();
+
         }
 
         public void SetThreshold(int thr)
